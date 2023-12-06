@@ -1,0 +1,107 @@
+.body {
+  width: 1600px;
+  font-weight: 500;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+html {
+  box-sizing: border-box inherit;
+  box-sizing: content-box
+}
+
+.box {
+  width: 1200px;
+}
+
+.list {
+  list-style: none;
+  width: 800px;
+  display: flex;
+}
+
+.list-item {
+  text-align: center;
+  padding: 10px;
+  width: 57px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.box-sizing {
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+}
+
+/* ============ */
+/* Сработает, .list-item это коллекция соседей с общим родителем */
+/* .list-item:структурный псевдокласс {
+
+} */
+
+.list-item {
+  margin-bottom: 12px;
+}
+
+
+/* :last-child */
+/* .list-item:last-child {
+  margin-bottom: 0;
+} */
+
+
+/* :first-child */
+/* .list-item:first-child {
+  margin-bottom: 0;
+} */
+
+
+/* :not */
+/* .list-item:not(:last-child) {
+  margin-bottom: 0;
+} */
+
+
+/* 
+.list-item:nth-child(6) {
+  background-color: orange;
+} */
+
+/* .list-item:nth-child(2n) {
+  background-color: tomato;
+} */
+
+/* .list-item:nth-child(even) {
+  background-color: tomato;
+} */
+
+/* .list-item:nth-child(2n+1) {
+  background-color: orange;
+} */
+
+/* .list-item:nth-child(odd) {
+  background-color: orange;
+} */
+
+/* .list-item:nth-child(n+3) {
+  background-color: tomato;
+} */
+
+/* .list-item:nth-child(-n+5) {
+  background-color: tomato;
+} */
+
+/* .list-item:nth-child(3n+1) {
+  background-color: tomato;
+} */
+
+/* .list-item:nth-last-child(3) {
+  background-color: tomato;
+} */
+
+.list-item:nth-last-child(-n+3) {
+  background-color: tomato;
+}
